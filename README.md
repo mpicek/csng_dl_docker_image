@@ -20,3 +20,16 @@ In the docker bash, we need to run:
 source activate csng-dl
 ```
 in order to activate the environment. Now we can run whatever we want.
+
+
+To push the image to Docker Hub, you have to log in:
+```bash
+docker login
+```
+
+and then run
+```bash
+docker push picekma/csng_docker_dl:tagname
+```
+where tagname is for example '0.1'.
+
