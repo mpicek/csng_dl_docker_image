@@ -7,12 +7,12 @@ that everything is well installed.
 
 How to build the image:
 ```bash
-docker build -t csng_dl:0.1 .
+docker build -t picekma/csng_docker_dl:0.1 .
 ```
 
 How to run the image:
 ```bash
-docker run --gpus all -it --rm -v local_dir:$(pwd) csng_dl:0.1
+docker run --gpus all -it --rm -v local_dir:$(pwd) picekma/csng_docker_dl:0.1
 ```
 
 In the docker bash, we need to run:
