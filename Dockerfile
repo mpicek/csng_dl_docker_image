@@ -9,6 +9,7 @@ RUN conda env create -f csng-dl.yml
 # whole thing is ran instead of the default '/bin/bash -c ls'
 SHELL ["conda", "run", "-n", "csng-dl", "/bin/bash", "-c"]
 
+RUN echo "source activate csng-dl" > ~/.bashrc
 RUN echo "Make sure torch is installed"
 RUN python -c "import torch"
 RUN echo "Make sure neuralpredictors are installed"

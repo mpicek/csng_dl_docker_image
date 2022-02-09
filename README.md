@@ -15,12 +15,7 @@ How to run the image:
 docker run --gpus all -it --rm -v local_dir:$(pwd) picekma/csng_docker_dl:0.1
 ```
 
-In the docker bash, we need to run:
-```bash
-source activate csng-dl
-```
-in order to activate the environment. Now we can run whatever we want.
-
+In the container's bash, the conda environment is already activated.
 
 To push the image to Docker Hub, you have to log in:
 ```bash
