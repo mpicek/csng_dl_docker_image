@@ -1,6 +1,8 @@
 # csng_dl_docker_image
 Docker image setup based on NGC PyTorch image for prediction of neural responses using Deep Learning.
 
+The Docker Hub repository is located [here](https://hub.docker.com/repository/docker/picekma/csng_docker_dl/general).
+
 Dockerfile is based on NGC PyTorch image with tag 21.03 which is known to work for us.
 The Dockerfile creates a Conda environment, installs the dependencies and checks
 that everything is well installed.
