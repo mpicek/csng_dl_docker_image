@@ -281,6 +281,7 @@ dependencies:
     - tqdm==4.61.2
     - wandb==0.12.9
     - werkzeug==2.0.1
+    - wget==3.2
     - yarl==1.6.3
     - yaspin==2.1.0
 prefix: /home/baroni/miniconda3/envs/csng-dl
