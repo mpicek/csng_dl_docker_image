@@ -38,12 +38,14 @@ Get a virtual machine with enough CPUs, RAM and a large SCRATCHDIR.
 export TMPDIR=$SCRATCHDIR
 export SINGULARITY_TMPDIR=$SCRATCHDIR
 export SINGULARITY_CACHEDIR=$SCRATCHDIR
-singularity build image.img docker://picekma/csng_docker_dl:0.1
+singularity build path/to/new/image.img docker://picekma/csng_docker_dl:0.1
 ```
 
 And then run with:
 ```
-singularity shell --nv -B $SCRATCHDIR /storage/budejovice1/home/mpicek/csng-dl.img
+singularity shell --nv -B $SCRATCHDIR path/to/new/image.img
 ```
 
 In the container's bash, run `source activate csng-dl` to activate the Conda environment.
+
+Your container is now ready and you can execute code from [this repository](https://github.com/mpicek/reCNN_visual_prosthesis).
