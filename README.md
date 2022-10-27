@@ -4,17 +4,19 @@ Docker image setup based on NGC PyTorch image for prediction of neural responses
 The Docker Hub repository is located [here](https://hub.docker.com/repository/docker/picekma/csng_docker_dl/general).
 
 Dockerfile is based on NGC PyTorch image with tag 21.03 which is known to work for us.
-The Dockerfile creates a Conda environment, installs dependencies and checks
-that everything is well installed.
+The Dockerfile installs all necessary dependencies with pip (and without conda
+so that we do not need to activate it).
+
+Moreover (from version 1.0), the image is capable of creating a JupyterHub server.
 
 How to build the image:
 ```bash
-docker build -t picekma/csng_docker_dl:0.1 .
+docker build -t picekma/csng_docker_dl:1.0 .
 ```
 
 How to run the image:
 ```bash
-docker run --gpus all -it --rm -v local_dir:$(pwd) picekma/csng_docker_dl:0.1
+docker run --gpus all -it --rm -v local_dir:$(pwd) picekma/csng_docker_dl:1.0
 ```
 
 In the container's bash, run `source activate csng-dl` to activate the Conda environment.
@@ -28,7 +30,7 @@ and then run
 ```bash
 docker push picekma/csng_docker_dl:tagname
 ```
-where tagname is for example '0.1'.
+where tagname is for example '1.0'.
 
 ### Creating and running a Singularity image on MetaCentrum
 
