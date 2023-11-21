@@ -51,3 +51,9 @@ singularity shell --nv -B $SCRATCHDIR path/to/new/image.img
 In the container's bash, run `source activate csng-dl` to activate the Conda environment.
 
 Your container is now ready and you can execute code from [this repository](https://github.com/mpicek/reCNN_visual_prosthesis).
+
+## Version overview
+#### 1.0
+ - capable of creating a JupyterHub server
+#### all_libraries
+ - newest version with all necessary libraries

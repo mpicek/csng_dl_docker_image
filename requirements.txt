@@ -21,3 +21,5 @@ npm
 configurable-http-proxy
 jupyterhub
 batchspawner
+plotly
+git+https://github.com/CSNG-MFF/imagen.git
